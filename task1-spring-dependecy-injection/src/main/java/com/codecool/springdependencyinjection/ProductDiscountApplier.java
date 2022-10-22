@@ -1,5 +1,6 @@
 package com.codecool.springdependencyinjection;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
@@ -7,6 +8,10 @@ import java.util.Random;
 
 @Component
 public class ProductDiscountApplier {
+
+
+
+
 
     public Product applyDiscount(Product product){
         BigDecimal discount = getDiscount(product.getPrice());
